@@ -1,12 +1,129 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: {{projectTitle}}</title>
+    <title>Sedona</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+    <header class="page__ header main-header">
+      <div class="main-header__wrapper">
+        <a href="#" class="main-header__logo logo">
+          <img src="" alt="" class="logo__img">
+        </a>
+        <nav class="main-header__nav main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--active">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="catalog.html" class="main-nav__link">Фото и Видео</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html" class="main-nav__link">Форма Отзыва</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="https://htmlacademy.ru" class="main-nav__link">Html academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="title">
+          <div class="title__wrapper">
+            <div class="title__greet greet">
+              <img src="" alt="" class="greet__title">
+              <img src="" alt="" class="greet__text">
+            </div>
+            <div class="title__title"></div>
+            <div class="title__text"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page__main main">
+      <section class="description">
+        <h1 class="visually-hidden">Cайт по подбору и организации отдыха в городе Седона</h1>
+        <div class="description__wrapper">
+          <h2 class="description__title">Седона — небольшой городок в Аризоне, заслужвающий большего!</h2>
+          <p class="description__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Наши приемущества</h2>
+        <div class="advantages__wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item advantages-item--image-right advantages-item">
+              <h3 class="advantages-item__title">Настоящий городок</h3>
+              <p class="advantages-item__number"> №1</p>
+              <p class="advantages-item__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </li>
+            <li class="advantages__item">
+              <ul class="recommend">
+                <li class="recommend__item">
+                  <h3 class="recommend__title">Жилье</h3>
+                  <p class="recommend__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </li>
+                <li class="recommend__item">
+                  <h3 class="recommend__title">Еда</h3>
+                  <p class="recommend__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+                </li>
+                <li class="recommend__item">
+                  <h3 class="recommend__title">Сувениры</h3>
+                  <p class="recommend__text">Не только китайского, но и местного производства!</p>
+                </li>
+              </ul>
+            </li>
+            <li class="advantages__item advantages-item--image-left advantages-item">
+              <h3 class="advantages-item__title">Там есть Мост дьявола</h3>
+              <p class="advantages-item__number"> №2</p>
+              <p class="advantages-item__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </li>
+            <li class="advantages__item advantages-item">
+              <h3 class="advantages-item__title">Небольшая площадь</h3>
+              <p class="advantages-item__number"> №3</p>
+              <p class="advantages-item__text">Все интересные места находятся очень близко</p>
+            </li>
+            <li class="advantages__item advantages-item">
+              <h3 class="advantages-item__title">Красивая дорога</h3>
+              <p class="advantages-item__number"> №4</p>
+              <p class="advantages-item__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="advantages__item advantages-item">
+              <h3 class="advantages-item__title">Мало туристов</h3>
+              <p class="advantages-item__number"> №5</p>
+              <p class="advantages-item__text">Большинство едет в гранд каньон и толпится там</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="find-hotel">
+        <h2 class="visually-hidden">Поиск гостиниц</h2>
+        <div class="find-hotel__wrapper information">
+          <h3 class="information__title">Заинтересовались?</h3>
+          <p class="information__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <a href="#" class="button information__link">Найти гостиницу</a>
+        </div>
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Местоположение на карте</h2>
+      </section>
+    </main>
+    <footer class="page__footer main-footer">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <div class="main-footer__wrapper">
+        <div class="hashtag">#visitSEDONA</div>
+        <ul class="socials">
+          <li class="socials__item">twitter</li>
+          <li class="socials__item">facebook</li>
+          <li class="socials__item">youtube</li>
+        </ul>
+        <div class="develop">
+          <p class="develop__text">Разработано</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
