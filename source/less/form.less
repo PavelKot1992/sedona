@@ -1,0 +1,135 @@
+.form {
+  display: grid;
+  overflow: hidden;
+  margin-bottom: 48px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 66px;
+  }
+}
+
+.form__item {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &--greet {
+    @media (min-width: @tablet-width) and (max-width: (@desktop-width - 0.5)) {
+      padding-left: 58px !important;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 79px !important;
+    }
+
+    @media (min-width: @tablet-width) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+  }
+
+  &--contact {
+    @media (min-width: @tablet-width) {
+      margin-top: 30px;
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+  }
+
+  &--visit {
+    @media (min-width: @tablet-width) {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+  }
+
+  &--describe {
+    margin-bottom: 51px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 58px;
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+  }
+}
+
+.form__item:not(:last-of-type) {
+  @media (max-width: (@tablet-width - 0.5)) {
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.form__item--greet legend,
+.form__item--impressions legend {
+  @media (min-width: @tablet-width) {
+    text-align: start;
+  }
+}
+
+.form__item--impressions legend {
+  @media (min-width: @desktop-width) {
+    padding-left: 80px;
+  }
+}
+
+.form__item--impressions {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    order: -1;
+  }
+
+  &::after {
+    content: "";
+
+    @media (min-width: @tablet-width) {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: -95px;
+      bottom: 0;
+      width: 1px;
+      background-color: #dbdbdb;
+    }
+  }
+}
+
+fieldset.form__item--contact.form-field {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.form__button {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.form-legend {
+  text-align: end;
+
+  @media (max-width: (@tablet-width - 0.5)) {
+    display: none;
+  }
+}

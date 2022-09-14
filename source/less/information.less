@@ -1,0 +1,25 @@
+.information {
+  text-align: center;
+}
+
+.information__title {
+  @media (min-width: @tablet-width) {
+    font-size: @fontExtraLarge;
+  }
+
+  font-size: @fontMiddle;
+
+  &--font-larger {
+    font-size: @fontLarge;
+
+    @media (min-width: @tablet-width) {
+      font-size: @fontExtraLarge;
+    }
+  }
+  line-height: @lineHeightLarge;
+}
+
+.information__text {
+  font-size: @fontSmall;
+  line-height: @lineHeightMiddle;
+}

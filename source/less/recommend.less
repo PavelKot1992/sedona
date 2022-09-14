@@ -1,0 +1,127 @@
+.recommend {
+  margin-top: 24px;
+  display: grid;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 0;
+  }
+}
+
+.recommend__item {
+  text-align: center;
+
+  @media (max-width: (@tablet-width - 0.5)) {
+    text-align: start;
+    align-items: flex-start;
+    padding-left: 70px;
+    padding-right: 20px;
+
+    &--food {
+      order: 1;
+    }
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+
+    &--housing::before {
+      content: "";
+      display: block;
+      width: 75px;
+      height: 75px;
+      background-image: url("../img/icons/icon-house.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--food::before {
+      content: "";
+      display: block;
+      width: 77px;
+      height: 75px;
+      background-image: url("../img/icons/icon-burger.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--souvenirs::before {
+      content: "";
+      display: block;
+      width: 75px;
+      height: 75px;
+      background-image: url("../img/icons/icon-gift.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 60px;
+  }
+}
+
+.recommend__title {
+  font-size: @fontLarge;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: (@tablet-width - 0.5)) {
+    font-size: @fontMiddle;
+
+    &--housing::before {
+      content: "";
+      position: absolute;
+      margin-left: -50px;
+      display: block;
+      width: 39px;
+      height: 37px;
+      background-image: url("../img/icons/icon-house.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--food::before {
+      content: "";
+      position: absolute;
+      margin-left: -45px;
+      display: block;
+      width: 32px;
+      height: 38px;
+      background-image: url("../img/icons/icon-burger.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--souvenirs::before {
+      content: "";
+      position: absolute;
+      margin-left: -50px;
+      display: block;
+      width: 40px;
+      height: 35px;
+      background-image: url("../img/icons/icon-gift.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.recommend__text {
+  font-size: @fontSmall;
+
+  @media (max-width: (@tablet-width - 0.5)) {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,151 @@
+.advantages-item__title {
+  margin-top: 40px;
+  margin-bottom: 0;
+  font-size: @fontMiddle;
+
+  @media (min-width: @tablet-width) {
+    font-size: @fontLarge;
+    white-space: normal;
+  }
+
+  line-height: @lineHeightLarge;
+
+  &--nowrap {
+    @media (max-width: (@tablet-width - 0.5)) {
+      display: none;
+    }
+  }
+}
+
+.advantages-item__number {
+  font-size: @fontSmall;
+  line-height: @lineHeightSmall;
+}
+
+.advantages-item__text {
+  margin-bottom: 26px;
+  font-size: @fontSmall;
+  line-height: @lineHeightSmall;
+
+  @media (max-width: (@tablet-width - 0.5)) {
+    &--border-bottom {
+      position: relative;
+    }
+
+    &--border-bottom::after {
+      content: "";
+      height: 1px;
+      left: 0;
+      right: 0;
+      bottom: -50px;
+      position: absolute;
+      display: block;
+      background-color: #d6d6d6;
+    }
+  }
+}
+
+.advantages-item:last-child .advantages-item__text--border-bottom::after {
+  display: none;
+}
+
+.advantages-item {
+  background-color: @secondGray;
+  text-align: center;
+  display: inline-block;
+  max-width: 100%;
+
+  &--image-right {
+    background-color: @lightBlue;
+    color: @fontColorWhite;
+
+    &::after {
+      content: "";
+      display: flex;
+      min-height: 256px;
+      width: 100%;
+      background-image: url("../img/photo-city.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/photo-city@2x.jpg");
+      }
+
+      @media (min-width: @tablet-width) {
+        background-image: url("../img/photo-city-tablet.jpg");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/photo-city-tablet@2x.jpg");
+        }
+      }
+
+      @media (min-width: @desktop-width) {
+        background-image: url("../img/photo-city-desktop.jpg");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/photo-city-desktop@2x.jpg");
+        }
+      }
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  &--image-left {
+    display: flex;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+
+    flex-direction: column;
+    background-color: @lightBlue;
+    color: @fontColorWhite;
+
+    &::before {
+      content: "";
+      order: 1;
+      display: flex;
+      min-height: 256px;
+      width: 100%;
+      background-image: url("../img/photo-bridge.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/photo-bridge@2x.jpg");
+      }
+
+      @media (min-width: @tablet-width) {
+        order: -1;
+        background-image: url("../img/photo-bridge-tablet.jpg");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/photo-bridge-tablet@2x.jpg");
+        }
+      }
+
+      @media (min-width: @desktop-width) {
+        background-image: url("../img/photo-bridge-desktop.jpg");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/photo-bridge-desktop@2x.jpg");
+        }
+      }
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  &--recommend {
+    max-width: 100%;
+  }
+}
+
+.advantages__item--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

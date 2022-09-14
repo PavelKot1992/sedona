@@ -1,0 +1,55 @@
+.title {
+  background: url("../img/intro-triangle.svg") bottom no-repeat,
+    url("../img/back-mobile.jpg") bottom/cover no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/intro-triangle.svg") bottom no-repeat,
+      url("../img/back-mobile@2x.jpg") bottom/cover no-repeat;
+  }
+
+  @media (min-width: @tablet-width) {
+    background: url("../img/intro-triangle.svg") bottom no-repeat,
+      url("../img/back-desktop.jpg") bottom/cover no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/intro-triangle.svg") bottom no-repeat,
+        url("../img/back-desktop@2x.jpg") bottom/cover no-repeat;
+    }
+  }
+}
+
+.title__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title__title {
+  display: flex;
+  justify-content: center;
+  height: 158px;
+
+  img {
+    width: 282px;
+
+    @media (min-width: @tablet-width) {
+      width: 461px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 290px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 301px;
+  }
+}
+
+.title__main-title {
+  height: 389px;
+
+  @media (min-width: @tablet-width) {
+    height: 518px;
+  }
+}

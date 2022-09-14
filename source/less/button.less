@@ -1,0 +1,29 @@
+.button {
+  padding: 0;
+  height: 58px;
+  background-color: @lightBlue;
+  color: @fontColorWhite;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  border: none;
+
+  &:hover {
+    background-color: @lightBlueHover;
+  }
+
+  &:active {
+    background-color: @lightBlueActive;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: @buttonDisabledColor;
+  }
+}
